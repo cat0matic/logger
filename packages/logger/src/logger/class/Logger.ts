@@ -123,8 +123,8 @@ export class Logger {
    * @returns {Logger}
    */
   public trace(...data: any[]): Logger {
-    const stack = "\n" + Logger.createStack() + "\n";
-    data.push(stack);
+    //const stack = "\n" + Logger.createStack() + "\n";
+    //data.push(stack);
     return this.write(levels().TRACE, data);
   }
 
